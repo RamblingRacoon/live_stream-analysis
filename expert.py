@@ -53,7 +53,7 @@ if os.path.exists("concepts.json"):
 else:
     collection_of_concepts = concepts(data_file)
     with open("concepts.json", 'w', encoding ='utf8') as f:
-        json.dump(collection, f, indent=4)
+        json.dump(collection_of_concepts, f, indent=4)
 
 if os.path.exists("sentiment.json"):
     with open("concepts.json", 'r', encoding ='utf8') as f:
